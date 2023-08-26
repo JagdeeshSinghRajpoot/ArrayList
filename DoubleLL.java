@@ -54,7 +54,7 @@ public class DoubleLL {
     // removeFirst
     public static int removefirst() {
         if (head == null) {
-            System.out.println("DLL is empty");
+            System.out.println("DLL is empty (empty)");
             return Integer.MIN_VALUE;
         }
         if (size == 1) {

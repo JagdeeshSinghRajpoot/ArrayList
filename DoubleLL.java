@@ -41,6 +41,7 @@ public class DoubleLL {
         tail = newNode;
     }
 
+    // printLast
     public static void printList() {
         Node temp = head;
         while (temp != null) {
@@ -50,6 +51,7 @@ public class DoubleLL {
         System.out.println("null");
     }
 
+    // removeFirst
     public static int removefirst() {
         if (head == null) {
             System.out.println("DLL is empty");
@@ -87,12 +89,12 @@ public class DoubleLL {
         return val;
     }
 
-    public void reverse(){
+    public void reverse() {
         Node curr = head;
         Node prev = null;
         Node next;
 
-        while(curr != null){
+        while (curr != null) {
             next = curr.next;
             curr.next = prev;
             curr.prev = next;
@@ -102,6 +104,7 @@ public class DoubleLL {
         }
         head = prev;
     }
+
     public static void main(String[] args) {
         DoubleLL dll = new DoubleLL();
         dll.addFirst(2);
